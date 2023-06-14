@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카페24 엑스퍼트</title>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    
+    <!-- js cdn-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- swiper js cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- gsap cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    
+    <!-- js -->
+    <script src="./assets/js/split.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/tab.js"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- 상단헤더영역 -->
+        <header class="header deactive">
+            <div class="group-flex inner">
+                <h1 class="logo">
+                    <a href="">
+                        <img src="./assets/images/logo.svg" alt="카페24엑스퍼트로고">
+                        <span class="logo-txt">Experts</span>
+                    </a>
+                </h1>
+    
+                <nav class="gnb">
+                    <div class="group-nav">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="" class="nav">프로젝트 등록</a></li>
+                            <li class="nav-item"><a href="" class="nav">프로젝트 찾기</a></li>
+                            <li class="nav-item">
+                                <a href="" class="nav">관련 서비스</a>
+                                <ul class="submenu-list">
+                                    <li class="submenu-item"><a href="">스토어</a></li>
+                                    <li class="submenu-item"><a href="">디자인 센터</a></li>
+                                    <li class="submenu-item"><a href="">파트너 센터</a></li>
+                                    <li class="submenu-item"><a href="">개발자 센터</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="group-util">
+                    <a href="" class="btn-more">
+                        <span>파트너등록</span>
+                    </a>
+
+                    <a href="" class="login">
+                        <span>로그인</span>
+                    </a>
+                </div>
+
+                <!-- 테블릿 메뉴 
+                <nav class="side-nav">
+                    <div class="side_menu">
+                        <ul class="menu_left">
+                            <li class="menu_item"><a href="" class="nav">소개</a></li>
+                            <li class="menu_item"><a href="" class="nav">이야기</a></li>
+                            <li class="menu_item"><a href="" class="nav">뉴스</a></li>
+                            <li class="menu_item"><a href="" class="nav">기술과 서비스</a></li>
+                            <li class="menu_item"><a href="" class="nav">약속과 책임</a></li>
+                        </ul>
+                        <ul class="menu_sns">
+                            <li class="menu_item"><a href="" class="nav">투자정보</a></li>
+                            <li class="menu_item"><a href="" class="nav">인재영입</a></li>
+                            <li class="menu_item"><a href="" class="nav">고객센터</a></li>
+                        </ul>
+                    </div>
+                </nav>-->
+
+            </div>
+        </header>
+    
+        <main class="main">
+
+            <!-- 메인비쥬얼영역 -->
+            <section class="sc-vis">
+                
+                <div class="group-vis inner">
+                    
+                    <!-- 왼쪽영역 -->
+                    <div class="col-left"></div>
+
+                    <!-- 오른쪽영역 -->
+                    <div class="col-right">
+                        <h2 class="vis-title">
+                            상상했던 모든 것을<br>
+                            카페24 엑스퍼트에서 실현해 보세요!
+                        </h2>
+                        <p class="desc">
+                            특별한 쇼핑몰 기능, 맞춤 제작을 원하시나요?<br>
+                            카페24 파트너와 함께라면 복잡하고 어려운 일도 성공적으로 실현 가능합니다
+                        </p>
+                        <a href="" class="btn-more white">
+                            <span>지금시작하기</span>
+                        </a>
+                    </div>
+                </div>               
+            </section>
+
+
+
+           
+            <!-- 프로젝트영역 -->
+            <section class="sc-project">
+                <div class="group-prj inner">
+                    <h2>카페24 엑스퍼트에서 다양한 프로젝트를 경험하세요!</h2>
+                    <div class="prj-tap on">
+                        <ul class="tap-list">
+                            <li class="tap-item">
+                                <a href="#tab1" data-tab="" class="icon">
+                                    <div class="thumb-box"><img src="./assets/images/prj-menu1.png"></div>
+                                    <span>전체</span>
+                                </a>
+                            </li>
+                            <li class="tap-item">
+                                <a href="#tab2" data-tab="1001" class="icon">
+                                    <div class="thumb-box"><img src="./assets/images/prj-menu2.png"></div>
+                                    <span>쇼핑몰 구축</span>
+                                </a>
+                            </li>
+                            <li class="tap-item">
+                                <a href="#tab3" data-tab="1002" class="icon">
+                                    <div class="thumb-box"><img src="./assets/images/prj-menu3.png"></div>
+                                    <span>쇼핑몰 운영</span>
+                                </a>
+                            </li>
+                            <li class="tap-item">
+                                <a href="#tab4" data-tab="1003" class="icon">
+                                    <div class="thumb-box"><img src="./assets/images/prj-menu4.png"></div>
+                                    <span>디자인</span>
+                                </a>
+                            </li>
+                            <li class="tap-item">
+                                <a href="#tab5" data-tab="1004" class="icon">
+                                    <div class="thumb-box"><img src="./assets/images/prj-menu5.png"></div>
+                                    <span>IT·기술지원</span>
+                                </a>
+                            </li>
+                            <li class="tap-item">
+                                <a href="#tab6" data-tab="1005" class="icon">
+                                    <div class="thumb-box"><img src="./assets/images/prj-menu6.png"></div>
+                                    <span>카피라이팅·기획</span>
+                                </a>
+                            </li>
+                            <li class="tap-item">
+                                <a href="#tab7" data-tab="1006" class="icon">
+                                    <div class="thumb-box"><img src="./assets/images/prj-menu7.png"></div>
+                                    <span>마케팅</span>
+                                </a>
+                            </li>
+                            <li class="tap-item">
+                                <a href="#tab8" data-tab="1007" class="icon">
+                                    <div class="thumb-box"><img src="./assets/images/prj-menu8.png"></div>
+                                    <span>비즈니스</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- prj-tap// -->
+                    
+                    <div class="prj-area on">
+                        <ul class="prj-list" id="tabList">
+                          
+                            <!-- <li class="prj-item">
+                                <a href="" class="box">
+                                    <ul class="top">
+                                        <li>비상주</li>
+                                        <li>마감일D-25</li>
+                                    </ul>
+                                    <div class="txt-wrap">
+                                        <strong>
+                                            쇼핑몰 멤버쉽 회원에게만 각 제품의
+                                            가격이 보이게 하는 기능.
+                                        </strong>
+                                        <p>쇼핑몰 관리</p>
+                                    </div>
+                                    <div class="bottom">
+                                        <span class="money">9,999만원</span>
+                                        <span class="date">7일</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="prj-item">
+                                <a href="" class="box">
+                                    <ul class="top">
+                                        <li>비상주</li>
+                                        <li>마감일D-25</li>
+                                    </ul>
+                                    <div class="txt-wrap">
+                                        <strong>
+                                            쇼핑몰 멤버쉽 회원에게만 각 제품의
+                                            가격이 보이게 하는 기능.
+                                        </strong>
+                                        <p>쇼핑몰 관리</p>
+                                    </div>
+                                    <div class="bottom">
+                                        <span class="money">9,999만원</span>
+                                        <span class="date">7일</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="prj-item">
+                                <a href="" class="box">
+                                    <ul class="top">
+                                        <li>비상주</li>
+                                        <li>마감일D-25</li>
+                                    </ul>
+                                    <div class="txt-wrap">
+                                        <strong>
+                                            쇼핑몰 멤버쉽 회원에게만 각 제품의
+                                            가격이 보이게 하는 기능.
+                                        </strong>
+                                        <p>쇼핑몰 관리</p>
+                                    </div>
+                                    <div class="bottom">
+                                        <span class="money">9,999만원</span>
+                                        <span class="date">7일</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="prj-item">
+                                <a href="" class="box">
+                                    <ul class="top">
+                                        <li>비상주</li>
+                                        <li>마감일D-25</li>
+                                    </ul>
+                                    <div class="txt-wrap">
+                                        <strong>
+                                            쇼핑몰 멤버쉽 회원에게만 각 제품의
+                                            가격이 보이게 하는 기능.
+                                        </strong>
+                                        <p>쇼핑몰 관리</p>
+                                    </div>
+                                    <div class="bottom">
+                                        <span class="money">9,999만원</span>
+                                        <span class="date">7일</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="prj-item">
+                                <a href="" class="box">
+                                    <ul class="top">
+                                        <li>비상주</li>
+                                        <li>마감일D-25</li>
+                                    </ul>
+                                    <div class="txt-wrap">
+                                        <strong>
+                                            쇼핑몰 멤버쉽 회원에게만 각 제품의
+                                            가격이 보이게 하는 기능.
+                                        </strong>
+                                        <p>쇼핑몰 관리</p>
+                                    </div>
+                                    <div class="bottom">
+                                        <span class="money">9,999만원</span>
+                                        <span class="date">7일</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="prj-item more">
+                                <a href="" class="box">
+                                   <p>더 많은 프로젝트 보러가기</p>
+                                   <img src="./assets/images/prj-arrow.svg" alt="프로젝트 더보기">
+                                </a>
+                            </li> -->
+                    
+                        </ul>
+                    </div>
+                    
+                </div>
+
+            </section>
+
+
+
+
+            <!-- 배너1영역 -->
+            <section class="sc-banner1">
+                <div class="group-brn inner">
+                    <div class="col-left">
+                        <!-- <img src="./assets/images/mini-banner-1.gif" alt=""> -->
+                    </div>
+                    <div class="txt-wrap">
+                        <h2 class="title">
+                            카페24 엑스퍼트는 다양한 분야의 파트너에게 열려있습니다
+                        </h2>
+                        <p>지금 바로 카페24 엑스퍼트에 참여해 보세요!</p>
+                    </div>
+                    
+                    <a href="" class="btn-more white">
+                        <span>파트너 신청하기</span>
+                    </a>
+                </div>
+            </section>
+
+
+
+            <!-- 스토리영역 -->
+            <section class="sc-story">
+                <div class="story-animation">
+                    <div class="box circle1"></div>
+                    <div class="box circle2"></div>
+                    <div class="box circle3"></div>
+                </div>
+                <div class="group-story">
+
+                    <div class="inner">
+                        <h2 class="title">
+                            카페24 엑스퍼트를 이용한<br>
+                            파트너들의 다양한 이야기를 들어보세요!
+                        </h2>
+                    </div>
+
+                    <div class="contain">
+                        <div class="story-slide inner">
+                            <!-- Swiper -->
+                            <div class="swiper story-Swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+
+                                        <div class="txt-box">
+                                            <div class="top">
+                                                <div class="col-left">
+                                                    <strong class="title">(주)엘엠프렌즈</strong>
+                                                    <div class="star-img">
+                                                        <img src="./assets/images/star.svg">
+                                                    </div>
+                                                </div>
+                                                <div class="col-right">
+                                                    <img src="./assets/images/story1.webp">
+                                                </div>
+                                            </div>
+                                            <p class="bottom">
+                                    
+                                                해당 프로젝트를 클라이언트와 서로 소통하며 문제점
+                                                을 빠르게 해결하고 원하는 부분까지 완성도 있게 만들
+                                                었던 것 같습니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="txt-box">
+                                            <div class="top">
+                                                <div class="col-left">
+                                                    <strong class="title">위즈메이드</strong>
+                                                    <div class="star-img">
+                                                        <img src="./assets/images/star.svg">
+                                                    </div>
+                                                </div>
+                                                <div class="col-right">
+                                                    <img src="./assets/images/story2.webp">
+                                                </div>
+                                            </div>
+                                            <p class="bottom">
+                                                개발 및 유지보수 시 어려운 점도 많았지만 담당 팀원
+                                                및 매니저님들이 항상 빠른 피드백을 주셨기 때문에 어
+                                                려운 납기와 프로젝트 일정을 모두 소화할 수 있었습니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="txt-box">
+                                            <div class="top">
+                                                <div class="col-left">
+                                                    <strong class="title">디자인102</strong>
+                                                    <div class="star-img">
+                                                        <img src="./assets/images/star.svg">
+                                                    </div>
+                                                </div>
+                                                <div class="col-right">
+                                                    <img src="./assets/images/story3.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="swiper story-child">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                          <p>
+                                                            첫 진행 프로젝트였지만 카페24에서 제공한
+                                                            탄탄한 프로세스에 따라 원활하게 진행되었습니다.
+                                                             프로젝트 배정부터 클라이언트의 프로젝트 제안서로 
+                                                             요구사항을 정확히 알 수 있었고 진행 단계에서는
+                                                              익스퍼트 플로우
+                                                          </p>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                          <p>
+                                                            첫 진행 프로젝트였지만 카페24에서 제공한
+                                                            탄탄한 프로세스에 따라 원활하게 진행되었습니다.
+                                                             프로젝트 배정부터 클라이언트의 프로젝트 제안서로 
+                                                             요구사항을 정확히 알 수 있었고 진행 단계에서는
+                                                              익스퍼트 플로우
+                                                          </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="txt-box">
+                                            <div class="top">
+                                                <div class="col-left">
+                                                    <strong class="title">(주)채티스</strong>
+                                                    <div class="star-img">
+                                                        <img src="./assets/images/star.svg">
+                                                    </div>
+                                                </div>
+                                                <div class="col-right">
+                                                    <img src="./assets/images/story4.jpg">
+                                                </div>
+                                            </div>
+                                            <p class="bottom">
+                                                카페24 엑스퍼트를 통해서 유명 브랜드 자사몰의 브랜드 론칭 프로젝트에 참여할 수 있어서 좋았습니다. 클라이언트의 새벽배송 솔루션 도입의사 및 새벽배송 주문서 커스텀을 요청해주셨는데, 엑스퍼트 담당자 분께서
+                                                클라이언트와의 소통을 많이 도와주셨고, 카페24 인프라를 이용하여 개발 업무를 적극 지원해주셔서 해당 프로젝트를 신속하고 순조롭게 마무리할 수 있었습니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="txt-box">
+                                            <div class="top">
+                                                <div class="col-left">
+                                                    <strong class="title">해시코퍼레이션</strong>
+                                                    <div class="star-img">
+                                                        <img src="./assets/images/star.svg">
+                                                    </div>
+                                                </div>
+                                                <div class="col-right">
+                                                    <img src="./assets/images/story5.png">
+                                                </div>
+                                            </div>
+                                            <p class="bottom">
+                                                프로젝트 업무를 시작하면서 일이 정기적으로 들어올까 하는 걱정이 앞섰습니다. 하지만 엑스퍼트에 일이 들어오는 방식이 소비자 채택 방식 뿐만 아니라 카페24에서 배정을 해주는 방식도 존재하기 때문에 배정되는
+                                                프로젝트 일정을 소화 할 수 있다면 원하는 만큼의 일을 할 수 있고, 업무에 관련된 모든 중간 관리자 역할을 카페24가 해주기 때문에 일에만 집중 할 수 있었습니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn prev">
+                            <img src="./assets/images/arrow-prev.png" alt="이전">
+                        </button>
+                        <button class="btn next">
+                            <img src="./assets/images/arrow-next.png" alt="다음">
+                        </button>
+                    </div><!-- contain// -->
+
+                </div><!-- group-story// -->
+
+            </section>
+
+
+            <!-- 이용방법영역 -->
+            <section class="sc-how">
+                <div class="group-how">
+
+                    <div class="inner">
+                        <h2 class="title">
+                            카페24 엑스퍼트의 쉽고 편리한 프로세스
+                        </h2>
+                    </div>
+
+                    <div class="how-slide inner">
+                        <!-- Swiper -->
+                        <div class="swiper how-Swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="txt-box">
+                                        <div class="img-wrap">
+                                            <img src="./assets/images/how1.svg">
+                                        </div>
+                                        <strong class="title">STEP. 1 프로젝트 등록</strong>
+                                        <p class="desc">
+                                            구상하신 요구 사항을 프로젝트로 등록해 주시면,<br>
+                                            다양한 카테고리의 전문가들을 만날 수 있습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="txt-box">
+                                        <div class="img-wrap">
+                                            <img src="./assets/images/how2.png">
+                                        </div>
+                                        <strong class="title"> STEP. 2 파트너 모집 선택</strong>
+                                        <p class="desc">
+                                            다양한 파트너에게 프로젝트 분석과 견적을 제안받고<br>
+                                            마음에 드는 파트너를 만날 수 있습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="txt-box">
+                                        <div class="img-wrap">
+                                            <img src="./assets/images/how3.png">
+                                        </div>
+                                        <strong class="title">STEP. 3 프로젝트 미팅</strong>
+                                        <p class="desc">
+                                            파트너와의 미팅을 통해 프로젝트에 적합한 파트너를<br>
+                                            선정할 수 있습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="txt-box">
+                                        <div class="img-wrap">
+                                            <img src="./assets/images/how4.png">
+                                        </div>
+                                        <strong class="title">STEP. 4 프로젝트 계약</strong>
+                                        <p class="desc">
+                                            표준화된 계약서를 이용해 카페24 엑스퍼트에서<br>
+                                            안전한 계약을 도와드립니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="txt-box">
+                                        <div class="img-wrap">
+                                            <img src="./assets/images/how5.png">
+                                        </div>
+                                        <strong class="title">STEP. 5 프로젝트 진행 완료</strong>
+                                        <p class="desc">
+                                            카페24는 프로젝트 관리 및 안전 거래를 위한<br>
+                                            시스템을 지원하고 있어 자유롭게 프로젝트 진행 후<br>
+                                            안전하게 대금을 지급하게 됩니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            <!-- 질문영역 -->
+            <section class="sc-FAQ">
+                <div class="group-FAQ inner">
+                    <div class="col-left">
+                        <h2>FAQ</h2>
+                        <ul class="title-txt">
+                            <li>클라이언트</li>
+                            <li>파트너</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-right">
+                        <ul class="FAQ-list" data-scroll="">
+                            <li class="FAQ-item">
+                                <a href="" class="nav">
+                                    <span class="title">
+                                        Q. 카페24 엑스퍼트는 어떤 서비스인가요? 서비스 이용료가 있나요?
+                                    </span>
+                                    <span class="plus">
+                                        <img src="./assets/images/plus.png">
+                                    </span>
+                                </a>
+                                <div class="sub">
+                                    <p class="desc">
+                                        카페24 엑스퍼트는 쇼핑몰 구축 및 운영에 필요한 각 분야의 전문가와 안전하게 거래할 수 있도록 연결해 드리는 플랫폼입니다.<br>
+                                        파트너의 카페24 엑스퍼트 서비스 이용은 무료입니다.<br>
+                                        카페24 회원은 누구든지 파트너가 되어 무료로 프로젝트를 지원하고 서비스를 이용할 수 있습니다.<br>
+                                        카페24 파트너 회원이 아닌 경우, 먼저 [<a href="" class="blue">회원 가입</a>]을 해주시기 바랍니다.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="FAQ-item">
+                                <a href="" class="nav">
+                                    <span class="title">
+                                        Q. 프로젝터 의뢰는 어떻게 하나요?
+                                    </span>
+                                    <span class="plus">
+                                        <img src="./assets/images/plus.png">
+                                    </span>
+                                </a>
+                                <div class="sub">
+                                   <p class="desc">
+                                    스퍼트에 로그인 후, 상단 메뉴에서 [<a href="" class="blue">프로젝트 등록</a>]을 선택하세요.<br>
+                                    구상하신 내용을 작성해 주시면 카페24 매니저가 검토 후 최종적으로 프로젝트가 노출됩니다.<br>
+                                    프로젝트 요구 사항은 최대한 상세하게 작성해 주세요.<br>
+                                    충분한 정보가 제공되어야만 가장 적합한 파트너가 지원하여 프로젝트를 성공적으로 수행할 수 있게 됩니다.
+                                   </p>
+                                </div>
+                            </li>
+                            <li class="FAQ-item">
+                                <a href="" class="nav">
+                                    <span class="title">
+                                        Q. 프로젝트 수정을 하고 싶은데 가능한가요?
+                                    </span>
+                                    <span class="plus">
+                                        <img src="./assets/images/plus.png">
+                                    </span>
+                                </a>
+                                <div class="sub">
+                                   <p class="desc">
+                                        프로젝트 수정은 '검수 중' 상태인 경우만 가능합니다.<br>
+                                        [<a href="" class="blue">마이페이지 > 프로젝트 관리 > 전체 또는 검수 중</a>] 페이지에서 [수정] 버튼 선택 후 내용을 수정해 주시면 됩니다.<br>
+                                        '프로젝트 검수 완료'로 변경된 프로젝트는 수정이 불가능하며, 수정을 원하시는 경우 프로젝트 취소 후 재 등록 또는 카페24 엑스퍼트로 연락해 주세요.<br>
+                                   </p>
+                                </div>
+                            </li>
+                            <li class="FAQ-item">
+                                <a href="" class="nav">
+                                    <span class="title">
+                                        Q. 프로젝트 단위(비상주)가 아닌 인력을 기간 단위(상주)의 파트너도 구인 할 수 있나요?
+                                    </span>
+                                    <span class="plus">
+                                        <img src="./assets/images/plus.png">
+                                    </span>
+                                </a>
+                                <div class="sub">
+                                   <p class="desc">
+                                        프로젝트 등록 시 [<a href="" class="blue">프로젝트 등록 > 프로젝트 유형 > 프로젝트 방식</a>] 에서 [비상주], [상주]를 선택하여 의뢰하실 수 있습니다.<br>
+                                        선택한 방식에 따라 입력받는 상세 항목들이 상이한 점 참고해 주세요.<br>
+                                        ⓐ 비상주 : 제한된 장소 없이 파트너가 원하는 장소에서 자유롭게 프로젝트를 진행합니다.<br>
+                                        ⓑ 상주 : 클라이언트 요청 또는 협의를 통해 기간과 장소를 정하고 프로젝트를 진행합니다.
+                                   </p>
+                                </div>
+                            </li>
+                            <li class="FAQ-item">
+                                <a href="" class="nav">
+                                    <span class="title">
+                                        Q. 프로젝트 등록 후 검수 완료까지 얼마나 걸리나요?
+                                    </span>
+                                    <span class="plus">
+                                        <img src="./assets/images/plus.png">
+                                    </span>
+                                </a>
+                                <div class="sub">
+                                   <p class="desc">
+                                        프로젝트 등록 후 영업일 기준 1~2일 이내에 검수가 완료됩니다..<br>
+                                        검수 결과는 SMS, 이메일을 통해 안내드리며 [<a href="" class="blue">마이페이지 > 프로젝트 관리</a>] 페이지에서 확인할 수 있습니다.
+                                    </p>
+                                </div>
+                            </li>
+                            
+                        </ul>
+
+                        <a href="" class="btn-more">
+                            <span>FAQ 더 보기</span>
+                        </a>
+                    </div>
+                    
+                </div>
+            </section>
+           
+
+
+            <!-- 배너2영역 -->
+            <section class="sc-banner2">
+                <div class="group-brn2 inner">
+
+                    <div class="col-left"></div>
+                    <div class="txt-wrap">
+                        <h2 class="title">
+                            지금 카페24 엑스퍼트에서<br>
+                            여러분의 아이디어를 마음껏 펼쳐보세요.
+                        </h2>
+                    </div>
+                    
+                    <a href="" class="btn-more white">
+                        <span>프로젝트 등록하기</span>
+                    </a>
+                </div>
+            </section>
+
+           
+
+        </main>
+
+        <!-- 하단푸터영역 -->
+        <footer class="footer" data-scroll="">
+            <h2 class="blind">푸터</h2>
+
+            <div class="group-footer inner">
+                <div class="footer-top">
+                    <div class="family-area">
+                        <span class="f-title">
+                            Family Site
+                            <img src="./assets/images/footer-chev-down.png">
+                        </span>
+                        <ul class="family-list">
+                            <li class="family-item"><a href="#">카페24</a></li>
+                            <li class="family-item"><a href="#">쇼핑몰센터</a></li>
+                            <li class="family-item"><a href="#">마케팅센터</a></li>
+                            <li class="family-item"><a href="#">호스팅센터</a></li>
+                            <li class="family-item"><a href="#">도메인센터</a></li>
+                            <li class="family-item"><a href="#">스토어</a></li>
+                            <li class="family-item"><a href="#">디자인센터</a></li>
+                            <li class="family-item"><a href="#">교육센터</a></li>
+                            <li class="family-item"><a href="#">창업센터</a></li>
+                            <li class="family-item"><a href="#">개발자센터</a></li>
+                            <li class="family-item"><a href="#">파트너센터</a></li>
+                            <li class="family-item"><a href="#">리셀러</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="fmenu-list">
+                        <li class="fmenu-item">
+                            About
+                            <ul class="fsub-list">
+                                <li class="fsub-tiem"><a href="">엑스퍼트 소개</a></li>
+                            </ul>
+                        </li>
+                        <li class="fmenu-item">
+                            Service
+                            <ul class="fsub-list">
+                                <li class="fsub-tiem"><a href="">프로젝트 등록</a></li>
+                                <li class="fsub-tiem"><a href="">프로젝트 찾기</a></li>
+                                <li class="fsub-tiem"><a href="">파트너 등록</a></li>
+                            </ul>
+                        </li>
+                        <li class="fmenu-item">
+                            Support
+                            <ul class="fsub-list">
+                                <li class="fsub-tiem"><a href="">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li class="fmenu-item">
+                            Partners
+                            <ul class="fsub-list">
+                                <li class="fsub-tiem"><a href="">스토어</a></li>
+                                <li class="fsub-tiem"><a href="">디자인센터</a></li>
+                                <li class="fsub-tiem"><a href="">파트너센터</a></li>
+                                <li class="fsub-tiem"><a href="">개발자센터</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="" class="img-wrap">
+                        <img src="./assets/images/footer-logo.png" >
+                    </a>
+                </div>
+
+                <div class="footer-bottom">
+                    <address class="addr-area1">
+                        <span class="company">카페24(주)</span>
+                        <span class="ceo">대표자 : 이재석</span>
+                        <span class="addr">서울특별시 동작구 보라매로5길 15 (신대방동, 전문건설회관)</span>
+                        <span class="tel">이메일 : echosting@cafe24corp.com</span>
+                    </address>
+                    <address class="addr-area2">
+                        <span>사업자등록번호 : 118-81-20586 </span>
+                        <span>통신판매업신고 : 동작 제 02-680-078호</span>
+                        <span>사업자정보확인</span>
+                        <span>호스팅 제공 : 카페24(주)</span>
+                    </address>
+                    <p class="warn">카페24(주)는 통신판매중개자로서 통신판매의 거래당사자가 아니며, 입점판매자가 등록한 상품정보 및 거래에 대해 일체 책임을 지지 않습니다.</p>
+                    <div class="copy-bottom">
+                        <p class="copy">Copyright © Cafe24 Corp. All Rights Reserved.</p>
+                        <ul class="col-left">
+                            <li><a href="">회사소개</a></li>
+                            <li><a href="">엑스퍼트 이용약관</a></li>
+                            <li><a href="">파트너센터 이용약관</a></li>
+                            <li><a href="">개인정보처리방침</a></li>
+                        </ul>
+                    </div>
+                
+                </div>
+            </div>
+
+        </footer>
+
+        <!-- 마우스커서 
+        <div class="cursor">
+        </div>-->
+
+    </div><!-- wrapper// -->
+</body>
+
+</html>

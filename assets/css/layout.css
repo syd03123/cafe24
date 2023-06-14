@@ -1,0 +1,224 @@
+@import './reset.css';
+@import './common.css';
+@import './fonts.css';
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #fff;
+    height: 89px;
+    width: 100%;
+    border-bottom:1px solid var(--grey-color);
+}
+.header .group-flex{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .group-flex .logo{}
+.header .group-flex .logo a{
+    display: flex;
+    align-items: center;
+}
+.header .group-flex .logo-txt{
+    font-size: 18px;
+    font-weight: 200;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+.gnb{}
+.gnb .group-nav{}
+.gnb .group-nav .nav-list{
+    display: flex;
+}
+.gnb .group-nav .nav-item{}
+.gnb .group-nav li:nth-child(1){
+    margin-right: 40px;
+}
+.gnb .group-nav .nav{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+}
+.gnb .group-nav li:nth-child(2){
+    display: flex;
+    align-items: center;
+}
+.gnb .group-nav li:nth-child(2)::after {
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: var(--grey-color);
+    margin:0 25px;
+}
+
+.gnb .submenu-list{display: none;}
+.gnb .submenu-list .submenu-item{}
+.gnb .submenu-list .submenu-item a{}
+
+
+.header .group-util{
+    display: flex;
+    align-items: center;
+}
+.header .group-util .login{
+    font-size: 16px;
+    color: var(--deepgrey-color);
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+
+
+.footer{
+    background-color: #162038;
+    color: #fff;
+    padding: 70px 0;
+}
+.footer .group-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+.footer .footer-top{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .footer-top .family-area{
+}
+.footer .footer-top .f-title{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.footer .footer-top .f-title img{
+    margin-left: 14px;
+    width: 6px;
+    height: 4px;
+}
+
+
+.footer .footer-top .family-list{
+    position: absolute;
+    display: none;
+    background: #fff;
+    border-radius: 10px;
+    width: 140px;
+    padding: 10px 0;
+}
+.footer .footer-top .family-list.opacity{
+    display: block;
+}
+.footer .footer-top .family-item a{
+    display: flex;
+    padding: 5px 14px;
+    height: 100%;
+    font-size: 14px;
+    color: #959595;
+    line-height: 20px;
+}
+.footer .footer-top .family-item:nth-child(5)::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: var(--grey-color);
+    margin: 10px 0;
+}
+.footer .footer-top .family-item:nth-child(8)::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: var(--grey-color);
+    margin: 10px 0;
+}
+.footer .footer-top .family-item:nth-child(10)::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: var(--grey-color);
+    margin: 10px 0;
+}
+
+
+.footer .footer-top .fmenu-list{
+    display: flex;
+    gap:200px;
+}
+
+.footer .footer-top .fmenu-list{}
+.footer .footer-top .fmenu-item{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+}
+.footer .footer-top .fsub-list{
+    color: #AEB4C6;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.footer .footer-top .fmenu-item:last-child a{
+}
+.footer .footer-top .fmenu-item:last-child a::after{
+    content: "";
+    display: inline-block;
+    background: url(../images/link-icon.svg) no-repeat;
+    background-size: cover;
+    width: 12px;
+    height: 15px;
+    margin-left: 10px;
+    /* background-color: #AEB4C6; */
+}
+.footer .footer-top .img-wrap{
+    width: 53px;
+    height: 53px;
+}
+
+
+.footer-bottom{
+    display: flex;
+    flex-direction: column;
+    color: #AEB4C6;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 25px;
+}
+.footer-bottom .addr-area1{}
+.footer-bottom .addr-area1 span,
+.footer-bottom .addr-area2 span{
+    margin-right: 20px;
+}
+
+.footer-bottom .warn{
+    padding: 20px 0;
+    border-bottom: 1px solid #444B59;
+}
+
+.footer-bottom .copy-bottom{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between
+}
+.footer-bottom .copy-bottom .col-left{
+    display: flex;
+    gap: 10px;
+}
+.footer-bottom .copy-bottom .col-left li:last-child {
+    color: #fff;
+}

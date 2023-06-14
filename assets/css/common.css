@@ -1,0 +1,122 @@
+/* 접근성고려한 텍스트숨기기 */
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+/* 메뉴 스크롤 없애기 */
+.scroll_hidden{
+    overflow: hidden;
+}
+
+/* 중심영역 */
+.contain{
+    max-width: 1568px;
+    margin: 0 auto;
+}
+
+.inner{
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+/* 더보기버튼 */
+.btn-more{
+    display: flex;
+    /* width: 150px; */
+    /* background: red; */
+}
+
+.btn-more > span{
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 13px 40px;
+    color: var(--deepblue-color);
+    border: 2px solid var(--deepblue-color);
+    border-radius: 30px;
+}
+
+.btn-more:hover span{
+    background: var(--deepblue-color);
+    color: #fff;
+}
+
+.btn-more.white > span{
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-more.white:hover span{
+    background: #fff;
+    color: #000;
+}
+
+h2.title{
+    color: #1B1E26;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+}
+
+
+   
+
+
+
+/* 작은피씨 */
+@media (max-width:1200px) {
+
+    /* 중심영역 */
+    .inner{
+        padding:0 50px;
+    }
+
+}
+
+/* 테블릿 */
+@media (max-width:1024px) {
+
+    /* 중심영역 */
+    .inner{
+        padding:0 30px;
+    }
+
+     /* 더보기 */
+     .link_detail{
+        font-size: 16px;
+    }
+
+}
+
+/* 모바일 */
+@media (max-width:767px) {
+    
+    /* 중심영역 */
+    .inner{
+        padding:0 20px;
+    }
+
+
+    /* 공통버튼 */
+    .btn_more{
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+
+
+    /* 더보기 */
+    .link_detail{
+        font-size: 14px;
+    }
+}
+
+
+
